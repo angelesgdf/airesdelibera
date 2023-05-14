@@ -354,6 +354,58 @@ h2{
     
     
     }
+    .grid {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: min-content min-content min-content min-content;
+        grid-template-areas:
+            "... title    title ..."
+            "... texto    texto ..."
+            "img1 ...     img2 ..."
+            "img1 ...    img2  ..."
+    
+    }
+
+    .grid-texto {
+        grid-area: texto;
+        color: #fafafa;  
+        padding: 0%;      
+        text-align:justify;
+        
+    
+    
+    }
+
+    .grid-img1 {
+        grid-area: img1;
+        overflow: auto;
+        padding: .1rem;
+        margin: 2rem;
+        align-self: center;
+        border-radius: 10px;
+        align-items: center;
+    }
+    
+    .grid-img2 {
+        grid-area: img2;
+        overflow: auto;
+        align-self: center;
+        margin: 5rem;
+        border-radius: 10px;
+       align-items: center;
+    
+    }
+    
+    .grid-title {
+        color: #fafafa;
+        grid-area: title;
+        text-align: center;
+        margin: .1rem;
+        padding: .1rem;
+        align-self: flex-end;
+        text-shadow: #7c7b7b;
+    
+    }
 
    
     
