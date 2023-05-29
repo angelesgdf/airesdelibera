@@ -9,8 +9,9 @@ body {
     font-family: 'Dongle', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #005A5E;
-
-}
+   
+     
+    }
 
 
 section {
@@ -127,7 +128,7 @@ footer {
     transform: scale(1.1);
 }
 
-.logo-fb{
+.logo-fb {
     padding: .5rem;
     margin: .5rem;
 }
@@ -146,6 +147,7 @@ footer {
     background-color: #7c7b7b;
     transform: scale(1.1);
 }
+
 .logo-ig {
     padding: .5rem;
     margin: .5rem;
@@ -239,7 +241,7 @@ h5 {
     background-color: #7c7b7b;
 }
 
-h2{
+h2 {
     color: #fafafa;
     margin: 2rem;
     text-align: center;
@@ -248,12 +250,12 @@ h2{
 
 .grid {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: min-content min-content min-content ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content min-content;
     grid-template-areas:
-        "title    img1    img2   img2"
-        "texto    img1    img2   img2"
-      
+        "title    img1 "
+        "texto    img2 "
+
 
 }
 
@@ -261,7 +263,7 @@ h2{
     color: #fafafa;
     grid-area: title;
     text-align: center;
-    
+
     margin: .5rem;
     padding: .5rem;
     align-self: flex-end;
@@ -286,7 +288,7 @@ h2{
     margin: 3rem;
     align-self: center;
     border-radius: 10px;
-    
+
 }
 
 .grid-img2 {
@@ -295,7 +297,7 @@ h2{
     align-self: center;
     margin: 4rem;
     border-radius: 10px;
-   
+
 
 }
 
@@ -305,39 +307,85 @@ h2{
 
 .grid2 {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: min-content min-content min-content min-content;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content min-content min-content min-content;
     grid-template-areas:
-        "title2      video video  ..."
-        "texto2      video  video ..."
-        "texto2      video  video ....";
+        "title2      texto2"
+        "img3      video"
+        "img4     img5"
+        "title3     texto3";
 }
 
 .grid-title2 {
     color: #fafafa;
     grid-area: title2;
-    margin: .5rem;
-    padding: .5rem;
-    text-align: end;
-    align-self: flex-end;
+    margin: .1rem;
+    padding: .2rem;
+    text-align: center;
+    align-self: flex-start;
 }
 
 .grid-texto2 {
     grid-area: texto2;
     color: #fafafa;
     text-align: justify;
+ 
+}
+
+.grid-title3 {
+    color: #fafafa;
+    grid-area: title2;
     margin: .5rem;
     padding: .5rem;
+    text-align: end;
+    align-self: flex-end;
+
+}
+
+.grid-texto3 {
+    grid-area: texto2;
+    color: #fafafa;
+    text-align: justify;
+    margin: 5rem;
+    padding: 5rem;
 }
 
 .grid-video {
-    grid-area: video;
+
+    justify-content: right;
+    margin: auto;
+    padding: 0%;
+    display: block;
+
+
 }
+
+.grid-img3 {
+    margin: auto;
+    padding: 1rem;
+
+}
+
+.grid-img4 {
+
+    margin: auto;
+    padding: 1rem;
+
+}
+
+.grid-img5 {
+    margin: auto;
+    padding: 1rem;
+
+}
+
+
 
 @media screen and (max-width: 1200px) {
     body {
         background-color: #005A5E;
     }
+
     nav {
         font-size: medium;
         background-color: #d1cfcf;
@@ -346,8 +394,8 @@ h2{
         justify-content: center;
         flex: auto;
         display: flex;
-    
-    
+
+
     }
 }
 
@@ -358,8 +406,9 @@ h2{
 
     iframe {
         width: auto;
-       
+
     }
+
     nav {
         font-size: medium;
         background-color: #d1cfcf;
@@ -368,9 +417,10 @@ h2{
         justify-content: center;
         flex: auto;
         display: flex;
-    
-    
+
+
     }
+
     .grid {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
@@ -380,17 +430,17 @@ h2{
             "... texto    texto ..."
             "img1 ...     img2 ..."
             "img1 ...    img2  ..."
-    
+
     }
 
     .grid-texto {
         grid-area: texto;
-        color: #fafafa;  
-        padding: 0%;      
-        text-align:justify;
-        
-    
-    
+        color: #fafafa;
+        padding: 0%;
+        text-align: justify;
+
+
+
     }
 
     .grid-img1 {
@@ -402,17 +452,17 @@ h2{
         border-radius: 10px;
         align-items: center;
     }
-    
+
     .grid-img2 {
         grid-area: img2;
         overflow: auto;
         align-self: center;
         margin: 5rem;
         border-radius: 10px;
-       align-items: center;
-    
+        align-items: center;
+
     }
-    
+
     .grid-title {
         color: #fafafa;
         grid-area: title;
@@ -421,21 +471,23 @@ h2{
         padding: .1rem;
         align-self: flex-end;
         text-shadow: #7c7b7b;
-    
+
     }
 
-   
-    
+
+
 }
 
 @media screen and (max-width: 480px) {
     body {
         background-color: #bdbaba;
     }
+
     iframe {
         width: auto;
-        
+
     }
+
     nav {
         font-size: medium;
         background-color: #d1cfcf;
@@ -443,9 +495,9 @@ h2{
         padding-bottom: .5rem;
         justify-content: center;
         flex: auto;
-        display:inline-block;
-    
-    
+        display: inline-block;
+
+
     }
 
     .grid {
@@ -457,17 +509,17 @@ h2{
             "... texto    texto ..."
             "... img1    img1..."
             "... img2    img2..."
-    
+
     }
 
     .grid-texto {
         grid-area: texto;
-        color: #fafafa;  
-        padding: 0%;      
-        text-align:justify;
-        
-    
-    
+        color: #fafafa;
+        padding: 0%;
+        text-align: justify;
+
+
+
     }
 
     .grid-img1 {
@@ -479,17 +531,17 @@ h2{
         border-radius: 10px;
         align-items: center;
     }
-    
+
     .grid-img2 {
         grid-area: img2;
         overflow: auto;
         align-self: center;
         margin: .1rem;
         border-radius: 10px;
-       align-items: center;
-    
+        align-items: center;
+
     }
-    
+
     .grid-title {
         color: #fafafa;
         grid-area: title;
@@ -498,7 +550,7 @@ h2{
         padding: .1rem;
         align-self: flex-end;
         text-shadow: #7c7b7b;
-    
+
     }
-  
+
 }
