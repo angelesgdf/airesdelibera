@@ -34,10 +34,12 @@ section {
 
 
 .img-logo {
+    padding: 1rem;
     justify-content: center;
     display: flex;
     overflow: auto;
     transform: none;
+    
 }
 
 div {
@@ -53,15 +55,29 @@ div {
 
 
 nav {
-    font-size: medium;
-    background-color: #d1cfcf;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    font-size:large;
+  
     justify-content: center;
     flex: auto;
     display: flex;
+    
 
 
+}
+.nav-item{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #7c7b7b;
+    border-radius: 20px;
+}
+
+.d-flex{
+   
+    justify-content: left;
+   display: flex;
+    margin: 3rem;
+    padding: 3rem;
+   
 }
 
 ul {
