@@ -117,8 +117,6 @@ footer {
     justify-content: center;
 }
 
-
-
 .logo-booking {
     padding: .5rem;
     margin: .5rem;
@@ -129,12 +127,31 @@ footer {
     transform: scale(1.1);
 }
 
+.logo-fb{
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.logo-fb:hover {
+    background-color: #7c7b7b;
+    transform: scale(1.1);
+}
+
 .logo-whats {
     margin: .5rem;
     padding: .5rem;
 }
 
 .logo-whats:hover {
+    background-color: #7c7b7b;
+    transform: scale(1.1);
+}
+.logo-ig {
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.logo-ig:hover {
     background-color: #7c7b7b;
     transform: scale(1.1);
 }
