@@ -121,11 +121,14 @@ footer {
 .logo-booking {
     padding: .5rem;
     margin: .5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo-booking:hover {
-    background-color: #7c7b7b;
+
     transform: scale(1.1);
+    
 }
 
 .logo-fb {
@@ -243,7 +246,7 @@ h5 {
 
 h2 {
     color: #fafafa;
-    margin: 2rem;
+   margin: 2rem;
     text-align: center;
 }
 
@@ -251,12 +254,12 @@ h2 {
 .grid {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: min-content min-content min-content;
+    grid-template-rows: min-content min-content min-content min-content min-content;
     grid-template-areas:
         "title    img1 "
         "texto    img2 "
-
-
+        "img2a    img1a "
+        
 }
 
 .grid-title {
@@ -264,9 +267,9 @@ h2 {
     grid-area: title;
     text-align: center;
 
-    margin: .5rem;
-    padding: .5rem;
-    align-self: flex-end;
+    margin: .1rem;
+    padding: .2rem;
+    align-self:center;
     text-shadow: #7c7b7b;
 
 }
@@ -274,10 +277,10 @@ h2 {
 .grid-texto {
     grid-area: texto;
     color: #fafafa;
-    margin: .5rem;
-    padding: .5rem;
+    margin: 5rem;
+    padding: 5rem;
     text-align: justify;
-
+    align-self:center;
 
 }
 
@@ -301,6 +304,27 @@ h2 {
 
 }
 
+.grid-img1a {
+    grid-area: img1a;
+    overflow: auto;
+    padding: 1rem;
+    margin: 3rem;
+    align-self: center;
+    border-radius: 10px;
+
+}
+
+.grid-img2a {
+    grid-area: img2a;
+    overflow: auto;
+    align-self: center;
+    margin: 4rem;
+    border-radius: 10px;
+
+
+}
+
+
 
 
 
@@ -308,12 +332,13 @@ h2 {
 .grid2 {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: min-content min-content min-content min-content min-content;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content;
     grid-template-areas:
-        "title2      texto2"
-        "img3      video"
-        "img4     img5"
-        "title3     texto3";
+        "title2      ..."
+        "texto2      video"
+        "img3      title3"
+        "...     texto3"
+        "img5    img4";
 }
 
 .grid-title2 {
@@ -322,36 +347,39 @@ h2 {
     margin: .1rem;
     padding: .2rem;
     text-align: center;
-    align-self: flex-start;
+    align-self:auto;
 }
 
 .grid-texto2 {
     grid-area: texto2;
     color: #fafafa;
     text-align: justify;
+    margin: 2rem;
+    padding: 2rem;
  
 }
 
 .grid-title3 {
+
     color: #fafafa;
-    grid-area: title2;
-    margin: .5rem;
-    padding: .5rem;
-    text-align: end;
-    align-self: flex-end;
+    grid-area: title3;
+    margin: 5rem;
+    padding: 5rem;
+    text-align:right;
+    align-self:auto;
 
 }
 
 .grid-texto3 {
-    grid-area: texto2;
+    grid-area: texto3;
     color: #fafafa;
     text-align: justify;
-    margin: 5rem;
-    padding: 5rem;
+    margin: 2rem;
+    padding: 2rem;
 }
 
 .grid-video {
-
+    grid-area: video;
     justify-content: right;
     margin: auto;
     padding: 0%;
@@ -361,19 +389,21 @@ h2 {
 }
 
 .grid-img3 {
+    grid-area: img3;
     margin: auto;
     padding: 1rem;
 
 }
 
 .grid-img4 {
-
+    grid-area: img4;
     margin: auto;
     padding: 1rem;
 
 }
 
 .grid-img5 {
+    grid-area: img5;
     margin: auto;
     padding: 1rem;
 
