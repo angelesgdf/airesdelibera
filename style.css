@@ -9,9 +9,9 @@ body {
     font-family: 'Dongle', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #005A5E;
-   
-     
-    }
+
+
+}
 
 
 section {
@@ -37,8 +37,8 @@ section {
     padding: 1rem;
     justify-content: right;
     display: flex;
-       
-    
+
+
 }
 
 .contact {
@@ -52,12 +52,12 @@ section {
 }
 
 
-.nav-link{
-    color:#fafafa;
-    
+.nav-link {
+    color: #fafafa;
+
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #7c7b7b;
 }
 
@@ -127,7 +127,7 @@ footer {
 .logo-booking:hover {
 
     transform: scale(1.1);
-    
+
 }
 
 .logo-fb {
@@ -201,29 +201,30 @@ footer {
 
 }
 
-.caja-mapa{
-    flex-wrap:nowrap;
+.caja-mapa {
+    flex-wrap: nowrap;
     align-items: center;
 }
 
-.mapita{
+.mapita {
     border-radius: 20px;
-    box-shadow: 0px 6px 12px -1px  cornsilk;
+    box-shadow: 0px 6px 12px -1px cornsilk;
 }
 
-.texto-mapa{
+.texto-mapa {
     width: 30%;
-    color:#fafafa;
+    color: #fafafa;
     text-align: justify;
     margin: 1rem;
     padding: 1rem;
 }
 
-.title-mapa{
+.title-mapa {
     color: #fafafa;
     margin: 1rem;
     padding: 1rem;
 }
+
 h5 {
     color: #ffffff;
     margin: .5rem;
@@ -267,7 +268,7 @@ h5 {
 
 h2 {
     color: #fafafa;
-   margin: 2rem;
+    margin: 2rem;
     text-align: center;
 }
 
@@ -280,7 +281,7 @@ h2 {
         "title    img1 "
         "texto    img2 "
         "img2a    img1a "
-        
+
 }
 
 .grid-title {
@@ -290,7 +291,7 @@ h2 {
 
     margin: .1rem;
     padding: .2rem;
-    align-self:center;
+    align-self: center;
     text-shadow: #7c7b7b;
 
 }
@@ -301,7 +302,7 @@ h2 {
     margin: 5rem;
     padding: 5rem;
     text-align: justify;
-    align-self:center;
+    align-self: center;
 
 }
 
@@ -368,7 +369,7 @@ h2 {
     margin: .1rem;
     padding: .2rem;
     text-align: center;
-    align-self:auto;
+    align-self: auto;
 }
 
 .grid-texto2 {
@@ -377,7 +378,7 @@ h2 {
     text-align: justify;
     margin: 2rem;
     padding: 2rem;
- 
+
 }
 
 .grid-title3 {
@@ -386,8 +387,8 @@ h2 {
     grid-area: title3;
     margin: 5rem;
     padding: 5rem;
-    text-align:right;
-    align-self:auto;
+    text-align: right;
+    align-self: auto;
 
 }
 
@@ -435,195 +436,219 @@ h2 {
 @media screen and (max-width: 1200px) {
     body {
         background-color: #005A5E;
-    }
-
-    nav {
-        font-size: medium;
-        background-color: #d1cfcf;
-        padding-top: .5rem;
-        padding-bottom: .5rem;
-        justify-content: center;
-        flex: auto;
-        display: flex;
-
-
-    }
-}
-
-@media screen and (max-width: 780px) {
-    body {
-        background-color: #7c7b7b;
-    }
-
-    iframe {
-        width: auto;
-
-    }
-
-    nav {
-        font-size: medium;
-        background-color: #d1cfcf;
-        padding-top: .5rem;
-        padding-bottom: .5rem;
-        justify-content: center;
-        flex: auto;
-        display: flex;
-
-
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows: min-content min-content min-content min-content;
-        grid-template-areas:
-            "... title    title ..."
-            "... texto    texto ..."
-            "img1 ...     img2 ..."
-            "img1 ...    img2  ..."
-
-    }
-
-    .grid-texto {
-        grid-area: texto;
-        color: #fafafa;
-        padding: 0%;
-        text-align: justify;
-
-
-
-    }
-
-    .grid-img1 {
-        grid-area: img1;
         overflow: auto;
-        padding: .1rem;
-        margin: 2rem;
-        align-self: center;
-        border-radius: 10px;
-        align-items: center;
     }
-
-    .grid-img2 {
-        grid-area: img2;
-        overflow: auto;
-        align-self: center;
-        margin: 5rem;
-        border-radius: 10px;
-        align-items: center;
-
-    }
-
-    .grid-title {
-        color: #fafafa;
-        grid-area: title;
-        text-align: center;
-        margin: .1rem;
-        padding: .1rem;
-        align-self: flex-end;
-        text-shadow: #7c7b7b;
-
-    }
-
-
 
 }
 
-@media screen and (max-width: 480px) {
-    body {
-        background-color: #bdbaba;
-    }
+    @media screen and (max-width: 780px) {
+        body {
+            color: #005A5E;
+            overflow: auto;
+        }
 
-    iframe {
-        width: auto;
+        iframe {
+            width: auto;
 
-    }
+        }
 
-    .img-logo {
-        overflow: auto;
-        justify-content: center;
-        
-       
-        
-    }
-
-    nav {
-        font-size:large;
-      
-        justify-content: center;
-        flex: auto;
-        display: flex;
-        
     
-    
-    }
-    .nav-item{
-        margin: 1rem;
-        padding: 1rem;
-        background-color: #7c7b7b;
-        border-radius: 20px;
-    }
-    
-    .d-flex{
-       
-        justify-content: center;
-       display: none;
-        margin: 3rem;
-        padding: 3rem;
-       
-    }
 
-    .grid {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows: min-content min-content min-content min-content;
-        grid-template-areas:
-            "... title    title ..."
-            "... texto    texto ..."
-            "... img1    img1..."
-            "... img2    img2..."
+        .grid {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: min-content min-content min-content min-content;
+            grid-template-areas:
+                "... title    title ..."
+                "... texto    texto ..."
+                "img1 ...     img2 ..."
+                "img1 ...    img2  ..."
 
-    }
+        }
 
-    .grid-texto {
-        grid-area: texto;
-        color: #fafafa;
-        padding: 0%;
-        text-align: justify;
+        .grid-texto {
+            grid-area: texto;
+            color: #fafafa;
+            padding: 0%;
+            text-align: justify;
 
 
 
-    }
+        }
 
-    .grid-img1 {
-        grid-area: img1;
-        overflow: auto;
-        padding: .1rem;
-        margin: .1rem;
-        align-self: center;
-        border-radius: 10px;
-        align-items: center;
-    }
+        .grid-img1 {
+            grid-area: img1;
+         
+            padding: .1rem;
+            margin: 2rem;
+            align-self: center;
+            border-radius: 10px;
+            align-items: center;
+        }
 
-    .grid-img2 {
-        grid-area: img2;
-        overflow: auto;
-        align-self: center;
-        margin: .1rem;
-        border-radius: 10px;
-        align-items: center;
+        .grid-img2 {
+            grid-area: img2;
+            
+            align-self: center;
+            margin: 5rem;
+            border-radius: 10px;
+            align-items: center;
+
+        }
+
+        .grid-title {
+            color: #fafafa;
+            grid-area: title;
+            text-align: center;
+            margin: .1rem;
+            padding: .1rem;
+            align-self: flex-end;
+            text-shadow: #7c7b7b;
+
+        }
+
+
 
     }
 
-    .grid-title {
-        color: #fafafa;
-        grid-area: title;
-        text-align: center;
-        margin: .1rem;
-        padding: .1rem;
-        align-self: flex-end;
-        text-shadow: #7c7b7b;
+    @media screen and (max-width: 480px) {
+        body {
+            color: #005A5E;
+            overflow: auto;
+        }
 
-    }
+        .grid {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: min-content min-content min-content min-content;
+            grid-template-areas:
+                "title"
+                "texto"
+                "img1"
+                "img2"
+
+        }
+section .grid {
+    flex-wrap: wrap;
+}
+
+.grid-title{
+
+width: 100%;
+margin: 5rem;
 
 }
+
+.grid-texto{
+    width: 100%;
+    
+   margin: 4rem;
+   padding:2rem;
+   justify-content: center;
+
+
+}
+
+.grid-img1{
+    flex-wrap: wrap;
+    margin: 6rem;
+    
+}
+
+.grid-img2{
+    flex-wrap: wrap;
+    margin:6rem;
+    
+}
+
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content;
+    grid-template-areas:
+        "title2 "
+        "video "
+        "texto2 "
+        "title3"        
+        "img3 "   
+        "texto3 "
+        "img4   "
+        "img5 ";
+}
+
+section .grid2 {
+    flex-wrap: wrap;
+}
+
+.grid-title2 {
+    color: #fafafa;
+    grid-area: title2;
+    margin: .1rem;
+    padding: .2rem;
+    text-align: center;
+    align-self: auto;
+}
+
+.grid-texto2 {
+    grid-area: texto2;
+    color: #fafafa;
+    text-align: justify;
+    width: 100%;
+    margin: .1rem;
+    padding: 2rem;
+
+}
+
+.grid-title3 {
+
+    color: #fafafa;
+    grid-area: title3;
+    margin: 5rem;
+    padding: 5rem;
+    text-align: right;
+    align-self: auto;
+
+}
+
+.grid-texto3 {
+    grid-area: texto3;
+    color: #fafafa;
+    text-align: justify;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.grid-video {
+    grid-area: video;
+    justify-content: right;
+    margin: auto;
+    padding: 0%;
+    display: block;
+
+
+}
+
+.grid-img3 {
+    grid-area: img3;
+    margin: auto;
+    padding: 1rem;
+
+}
+
+.grid-img4 {
+    grid-area: img4;
+    margin: auto;
+    padding: 1rem;
+
+}
+
+.grid-img5 {
+    grid-area: img5;
+    margin: auto;
+    padding: 1rem;
+
+}
+
+
+}   
