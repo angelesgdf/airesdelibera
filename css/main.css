@@ -33,6 +33,7 @@ section {
 }
 
 .img-logo {
+  color: #fafafa;
   padding: 1rem;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
@@ -40,6 +41,14 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.img-logo:hover {
+  color: #fafafa;
+  display: inline-block;
+  color: #5f5e5e;
+  -webkit-transition: 0.5;
+  transition: 0.5;
 }
 
 .contact {
@@ -199,12 +208,12 @@ footer {
 }
 
 .card {
-  background-color: #005A5E;
+  background-color: #555454;
   width: 30%;
   height: 30%;
   padding: 0.5rem;
   margin: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -426,6 +435,11 @@ h2 {
   grid-area: img5;
   margin: auto;
   padding: 1rem;
+}
+
+.preguntas {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1200px) {
